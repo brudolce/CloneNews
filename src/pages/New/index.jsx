@@ -1,6 +1,6 @@
 import NewCard from "../../components/NewCard";
 import { getNew, getItems } from "../../calls/haker-news";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { setList, setNews } from "../../store/ducks/newsList";
 import { useDispatch, useSelector } from "react-redux";
 

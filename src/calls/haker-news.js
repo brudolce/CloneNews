@@ -17,19 +17,6 @@ export const getBest = async (save) => {
     save(res)
 }
 
-export const getItemsFromFather = async (fatherItem, save) => {
-    let father = await fetch(`https://hacker-news.firebaseio.com/v0/item/${fatherItem}.json?print=pretty`)
-    father = await father.json()
-    const res = await Promise.all(
-        await father.kids?.map(async (item) => {
-            let comm = await fetch(`https://hacker-news.firebaseio.com/v0/item/${item}.json?print=pretty`)
-            comm = await comm.json()
-            return comm
-        })
-    )
-    save(res)
-}
-
 export const getItem = async (item, save) => {
     let res = await fetch(`https://hacker-news.firebaseio.com/v0/item/${item}.json?print=pretty`)
     res = await res.json()
