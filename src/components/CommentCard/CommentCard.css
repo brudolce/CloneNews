@@ -1,0 +1,28 @@
+.CommentCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eceff1;
+  cursor: pointer;
+}
+
+.CommentContent {
+  max-width: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  font-size: 12px;
+  margin: 7px 0px 10px 10px;
+}
+
+.NewFontComment {
+  color: #78909c;
+  font-size: 10px;
+  margin: 7px 0px 0px 10px;
+}
+
+.NewFontComment:hover {
+  text-decoration: underline;
+}

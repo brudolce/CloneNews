@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  font-family: "Roboto";
+}
+
+@media (min-width: 800px) {
+  .App {
+    padding: 0px 10%;
+  }
+}
+@media (max-width: 799px) {
+}
